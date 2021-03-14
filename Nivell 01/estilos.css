@@ -1,0 +1,133 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* box 01 */
+.header {
+    background: #000;
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .menu{
+        background: #fbe6c2;
+        display: flex;
+        flex-flow: row nowrap;
+        height: 80px;
+        align-items: center;
+    }
+        .logo{
+            background: #f0c929;
+            flex: 1 1 auto;
+            height: 30px;
+            
+        }
+        .nav{
+            background: #f0c929;
+            flex: 5 1 auto;
+            height: 30px;
+            
+        }
+        .social{
+            background: #f0c929;
+            flex: 1 1 auto;
+            height: 30px;
+            
+        }
+    .texto-principal{
+        background: #f48b29;
+    }
+        h1{
+        background: #ac0d0d;
+        }
+
+
+/* box 02 */
+.section {
+    background: #000;
+    display: flex;
+}
+    .articulos{
+        background: #f0c929;
+        display: flex;
+        flex: 2 1 auto;
+        flex-flow: row wrap;
+        
+    }
+        .article{
+            background: #3a6351;
+            flex: 1 1 40%;
+            
+        }
+        .navegacion{
+            background: #91b6a6;
+            flex: 1 1 100%;
+        }
+    .aside{
+        background: #f0c929;
+        flex: 1 1 auto;
+    }
+        .publicidad{
+            background: #e609c8;
+        }
+
+
+/* box 03 */
+.footer {
+    background: #000;
+    display: flex;
+    justify-content: center;
+}
+    .pie{
+        background: #ac0d0d;
+        width: 100%;
+        
+    }
+
+
+    @media all and (max-width: 800px){
+        .section{
+            flex-direction: column;
+            background: rgb(1, 255, 56);
+            
+        }
+        .menu{
+            /*flex-direction: column;
+            height: auto; */
+            
+        }
+        .aside{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;        
+        }
+       
+    }
+
+    @media all and (max-width: 600px){
+        .articulos{
+            flex-direction: column;
+            flex: 1 1 auto;
+        }   
+    }
+
+    @media all and (max-width: 400px){
+        .menu{
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            align-items: stretch;
+        }
+    
+
+        .aside{
+            flex-direction: column;
+            background: #f0abe7;
+        }
+    }
